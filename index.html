@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The tool that helps your channel climb to the TOP! Get new eyes on your stream instantly!" />
+  <meta name="keywords" content="">
+  <title>Rise to the top with CLIMB.</title>
+  <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://seodesigns.com/projects/codepen/071016/rangeslider.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="main wrapper">
+    <div id="page-preloader" class="preloader">
+      <div class="loader">
+        <span id="load_perc"></span>
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1 class="intro__title">Rise to the top with <span class="red-text">CLIMB</span>.</h1>
+        <div class="sign-up">
+          <div class="sign-up__left">
+            <img class="panda" src="images/panda.png" alt="panda">
+            <div class="info">
+              <img class="logo" src="images/icons/climb_logo.svg" alt="">
+              <p class="text">
+                Grow your streaming community using simple advertising tools paired with cost-effective targeting
+                options.
+              </p>
+            </div>
+          </div>
+          <div class="sign-up__right">
+            <p class="heading">
+              Work with the biggest streaming platforms out there and watch your audience grow.
+            </p>
+            <form class="form" action="">
+              <div class="form__item">
+                <label for="email" class="form__item__label">
+                  Email
+                </label>
+                <input type="text" id="email" class="form__item__input input--purple" placeholder="Enter your email">
+              </div>
+              <div class="form__item">
+                <label for="password" class="form__item__label">
+                  Password
+                </label>
+                <input type="password" id="password" class="form__item__input input--purple"
+                  placeholder="Enter your password">
+                <div data-check-field="password" class="form__item__eye btn-eye"></div>
+              </div>
+              <div class="form__item margin">
+                <label for="repeat_password" class="form__item__label">
+                  Repeat password
+                </label>
+                <input type="password" id="repeat_password" class="form__item__input input--purple"
+                  placeholder="Repeat your password">
+                <div data-check-field="repeat_password" class="form__item__eye btn-eye"></div>
+              </div>
+              <button type="button" form="signUp" class="btn btn--green">Sign up now</button>
+            </form>
+          </div>
+          <div class="sing-up-mobile">
+            <button type="button" data-name-popup-open="popup-login" class="btn btn--green popup-link">Sign up</button>
+          </div>
+        </div>
+      </div>
+      <div class="plates-wrapper">
+        <div class="info-plates">
+          <h2 class="info-plates__title">
+            Reach new <span class="red-text">viewers</span>.
+            Increase your <span class="red-text">audience</span>.
+            Get more <span class="red-text">fans</span>.
+          </h2>
+          <div class="plates">
+            <div class="plates__plate">
+              <img src="images/icons/sign-1.svg" alt="">
+              <p class="plate-info">
+                CLIMB donations empower your community to help build your channel and
+                <span class="green-text">expand your audience</span>.
+              </p>
+            </div>
+            <div class="plates__plate">
+              <img src="images/icons/sign-2.svg" alt="">
+              <p class="plate-info">
+                <span class="green-text">Promote</span>
+                your
+                <span class="green-text">live streams</span>
+                on popular gaming websites with
+                <span class="green-text">embedded content</span>
+                and
+                <span class="green-text">highlight reels</span>
+              </p>
+            </div>
+            <div class="plates__plate">
+              <img src="images/icons/sign-3.svg" alt="">
+              <p class="plate-info">
+                Boost your channel on the most popular <span class="green-text">gaming websites</span>,
+                with detailed targeting to find your viewers. Your audience is out there waiting for you
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="goal">
+          <h2 class="goal__title">
+            What’s your <span class="red-text">goal</span>?
+          </h2>
+          <input type="range" min="0" max="30" step="10" value="10">
+          <div class="goal-ranges">
+            <div class="goal-ranges__rate">
+              <p>10 <span class="d-block">viewers</span></p>
+            </div>
+            <div class="goal-ranges__rate">
+              <p>500 <span class="d-block">viewers</span></p>
+            </div>
+            <div class="goal-ranges__rate">
+              <p>2500 <span class="d-block">viewers</span></p>
+            </div>
+            <div class="goal-ranges__rate">
+              <p>5000 <span class="d-block">viewers</span></p>
+            </div>
+          </div>
+          <button type="button" data-name-popup-open="popup-login" class="btn btn--green popup-link">Sign up</button>
+        </div>
+
+        <div class="steps">
+          <h2 class="steps__title">
+            CLIMB <span class="red-text">real</span>.
+            CLIMB <span class="red-text">easy</span>.
+            CLIMB <span class="red-text">fast</span>.
+          </h2>
+          <div class="steps__cards">
+            <div class="card">
+              <h4 class="card__title green-text title-outlined">
+                authentic
+              </h4>
+              <p class="card__text">
+                Our rule-adhering technology promotes your
+                <span class="green-text">Twitch</span>,
+                <span class="green-text">YouTube</span>, and
+                <span class="green-text">Facebook Gaming</span> channels to real viewers.
+              </p>
+            </div>
+            <div class="card plate-margin">
+              <h4 class="card__title green-text title-outlined">
+                convenient
+              </h4>
+              <p class="card__text">
+                Focus on top quality content and leave the promotion to us.
+                Our <span class="green-text">simple targeting settings</span>
+                make it effortless for you to reach the audience you want.
+              </p>
+            </div>
+            <div class="card">
+              <h4 class="card__title green-text title-outlined">
+                instant
+              </h4>
+              <p class="card__text">
+                We promote your channel from the moment you go live.
+                <span class="green-text">Watch your audience grow</span>
+                in real time in your account settings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-numbers">
+          <div class="number">
+            <h4 class="number__title green-text title-outlined">
+              5 years
+            </h4>
+            <p class="number__text">
+              of experience in live content promotion
+            </p>
+          </div>
+          <div class="number plate-margin">
+            <h4 class="number__title green-text title-outlined">
+              28,000
+            </h4>
+            <p class="number__text">
+              streamers rely on us
+            </p>
+          </div>
+          <div class="number">
+            <h4 class="number__title green-text title-outlined">
+              500+
+            </h4>
+            <p class="number__text">
+              websites to showcase your content
+            </p>
+          </div>
+        </div>
+
+        <div class="section_partners">
+          <div class="container">
+            <div class="section_partners__inner">
+              <div class="partners">
+                <div class="section_partners__inner_element">
+                  <h1 class="section_partners_title">
+                    Our
+                    <span class="red-text">parters</span>
+                    &
+                    <span class="red-text">clients</span>
+                  </h1>
+                </div>
+                <div class="partners__row">
+                  <div class="partners_info">
+                    <div class="partners-slider swiper-container">
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide partners__card">
+                          <div class="partners__avatar">
+                            <img data-src="./images/igor_bezborodov.png" src="./images/igor_bezborodov.png"
+                              class="swiper-lazy" width="80" height="80" alt="image format png" />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                          <div class="partners__info">
+                            <div class="partners__partner__post">
+                              <span class="partners__partner__fio">Ivan Santana</span>
+                              <p class="partners__partner__position">Senior Director of Product Management at <span
+                                  class="custom_words_color">Twitch</span></p>
+                            </div>
+                            <div class="partners__partner__text">
+                              <blockquote>“CLIMB helps streamers find new audiences and scale their content. It’s a true
+                                win
+                                win.” </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners__card">
+                          <div class="partners__avatar">
+                            <img data-src="./images/justin_warden.jpg" src="./images/justin_warden.jpg"
+                              class="swiper-lazy" width="80" height="80" alt="image format png" />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                          <div class="partners__info">
+                            <div class="partners__partner__post">
+                              <span class="partners__partner__fio">Ivan Santana</span>
+                              <p class="partners__partner__position">Senior Director of Product Management at <span
+                                  class="custom_words_color">Twitch</span></p>
+                            </div>
+                            <div class="partners__partner__text">
+                              <blockquote>“CLIMB helps streamers find new audiences and scale their content. It’s a true
+                                win
+                                win.” </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners__card">
+                          <div class="partners__avatar">
+                            <img data-src="./images/bendjamin_bowman.jpg" src="./images/bendjamin_bowman.jpg"
+                              class="swiper-lazy" width="80" height="80" alt="image format png" />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                          <div class="partners__info">
+                            <div class="partners__partner__post">
+                              <span class="partners__partner__fio">Ivan Santana</span>
+                              <p class="partners__partner__position">Senior Director of Product Management at <span
+                                  class="custom_words_color">Twitch</span></p>
+                            </div>
+                            <div class="partners__partner__text">
+                              <blockquote>“CLIMB helps streamers find new audiences and scale their content. It’s a true
+                                win
+                                win.” </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="partners__row" style="padding: 0 20px;margin-bottom: 50px;">
+                  <div class="partners_info partners_info__company">
+                    <div class="swiper-button-prev swiper-button-partners-prev"></div>
+                    <div class="partners-slider-company swiper-container">
+                      <div class="swiper-wrapper partners-slider-company-wrapper">
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/ader.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/amazon.png"></a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/Bethesda.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/com2us.png"></a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/COMIC-CON.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/E3.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/ESPN.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/ESTARS.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/HIREZ.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/HOLLISTER.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/HyperX.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/LOQUID.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/Microsoft.png">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide partners-slider-company__slide">
+                          <div class="partners-slider-company__image">
+                            <a href="https://www.pubgesports.com/event/pubg-nations-cup" target="_blank">
+                              <img src="./images/partners/new-code.png">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-partners-next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-sign-up">
+          <h2 class="last__title">
+            <span class="red-text">Build your community</span> with the right audience.
+          </h2>
+          <button type="button" data-name-popup-open="popup-login" class="btn btn--green popup-link">Sign up</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copy">© 2021 Gameplane Media Inc.</p>
+    </footer>
+
+    <div id="popup-login" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <div class="popup__close close-popup">
+            <img src="./images/icons/close.png">
+          </div>
+          <div class="popup__title">
+            Work with the
+            <span class="red-text">biggest streaming platforms</span>
+            out there and watch <span class="red-text">your audience grow</span>.
+          </div>
+          <form class="form" style="width: inherit;" id="signUp">
+            <div class="form__item">
+              <label for="email" class="form__item__label">
+                Email
+              </label>
+              <input type="text" id="email" class="form__item__input" placeholder="Enter your email">
+            </div>
+            <div class="form__item">
+              <label for="password" class="form__item__label">
+                Password
+              </label>
+              <input type="password" id="password_in_popup" class="form__item__input" placeholder="Enter your password">
+              <div data-check-field="password_in_popup" class="form__item__eye btn-eye"></div>
+            </div>
+            <div class="form__item">
+              <label for="repeat_password" class="form__item__label">
+                Repeat password
+              </label>
+              <input
+                type="password"
+                id="repeat_password_in_popup"
+                class="form__item__input"
+                placeholder="Repeat your password"
+              >
+              <div data-check-field="repeat_password_in_popup" class="form__item__eye btn-eye"></div>
+            </div>
+            <button type="button" style="display: flex;margin: 25px auto 0;" form="signUp" class="btn btn--green">
+              Sign up now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/preloader.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-script.js"></script>
+  <script src="js/popups.js"></script>
+  <script src="js/login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://seodesigns.com/projects/codepen/071016/rangeslider.min.js"></script>
+  <script>
+    //Range slider setup
+    $('input[type=range]').rangeslider({
+      polyfill: false,
+      rangeClass: 'rangeslider',
+      disabledClass: 'rangeslider--disabled',
+      horizontalClass: 'rangeslider--horizontal',
+      verticalClass: 'rangeslider--vertical',
+      fillClass: 'rangeslider__fill',
+      handleClass: 'rangeslider__handle'
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+<!-- TODO sctoll to top from bottom button -->
